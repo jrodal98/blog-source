@@ -1,0 +1,7 @@
+#!/bin/sh
+
+
+echo "Deploying to https://jrodal98.github.io/blog/"
+cd public
+git push
+echo "Deployed successfully"
