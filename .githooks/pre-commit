@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo $GIT_DIR
+echo $GIT_PREFIX
 
 echo "Rebuilding static files"
 hugo
