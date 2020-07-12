@@ -1,5 +1,6 @@
 #!/bin/sh
 
+unset GIT_DIR
 
 echo "Deploying to https://jrodal98.github.io/blog/"
 cd public

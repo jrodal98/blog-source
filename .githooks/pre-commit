@@ -1,5 +1,7 @@
 #!/bin/sh
 
+unset GIT_DIR
+
 echo "Rebuilding static files"
 hugo
 cd public
