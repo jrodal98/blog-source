@@ -1,0 +1,7 @@
+[submodule "themes/mixedpaper"]
+	path = themes/mixedpaper
+	url = git@github.com:jrodal98/hugo-theme-mixedpaper.git 
+[submodule "public"]
+	path = public
+	url = git@github.com:jrodal98/blog.git
+	branch = master

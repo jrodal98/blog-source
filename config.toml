@@ -1,0 +1,67 @@
+baseURL = "/blog/"
+languageCode = "en-us"
+title = "Jacob Rodal"
+theme = "mixedpaper"
+copyright = "Jacob Rodal"
+enableRobotsTXT = true
+paginate = 3 # Set the number of posts to show before overflowing to the next page.
+summaryLength = 100 # Configure how long the post summary should be on the homepage.
+pygmentsUseClasses = true # enable theme-defined highlight style
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[Author]  
+  name = "Jacob Rodal"
+
+[params]
+# Blog description at the top of the homepage. Supports markdown.
+description = "Jacob Rodal's Blog"
+showReadMore = false
+mainSections = [
+	"post",
+
+]
+
+[params.comment]
+type = "none"
+
+# paginate of archives, tags and categories
+listPaginate = 20
+postLicense = ""
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 2
+
+[[menu.main]]
+  name = "Archives"
+  identifier = "archives"
+  url = "/archives/"
+  weight = 3
+
+[privacy]
+  [privacy.disqus]
+    disable = false
+  [privacy.googleAnalytics]
+    anonymizeIP = false
+    disable = false
+    respectDoNotTrack = false
+    useSessionStorage = false
+  [privacy.instagram]
+    disable = false
+    simple = false
+  [privacy.twitter]
+    disable = false
+    enableDNT = false
+    simple = false
+  [privacy.vimeo]
+    disable = false
+    simple = false
+  [privacy.youtube]
+    disable = false
+    privacyEnhanced = false

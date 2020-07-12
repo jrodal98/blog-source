@@ -1,0 +1,13 @@
+#!/bin/sh
+
+set -e
+
+echo "Deploying to https://jrodal98.github.io/blog/"
+hugo
+cd public
+git add .
+git commit -m "Update"
+git push
+echo "Deployed successfully"
+cd ..
+git add public
