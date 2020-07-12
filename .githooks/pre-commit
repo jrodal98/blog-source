@@ -3,6 +3,6 @@
 echo "Rebuilding static files"
 hugo
 cd public
-git add .
-git commit -m "Update"
+env -i git add .
+env -i git commit -m "Update"
 echo "Files built successfully"

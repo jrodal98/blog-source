@@ -3,5 +3,5 @@
 
 echo "Deploying to https://jrodal98.github.io/blog/"
 cd public
-git push
+env -i git push
 echo "Deployed successfully"
