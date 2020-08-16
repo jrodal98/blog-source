@@ -16,6 +16,7 @@ type: "post"
 I came across a few guides on the internet when trying to deploy a rocket application to a vps but wasn't pleased with the level of detail given. I had to consult two or three different guides before I was successful.
 
 This post should hopefully be sufficient for anybody with no experience using nginx, letsencrypt, and systemd.
+<!--more-->
 
 ## Step 1: Acquire a VPS and a Domain
 
