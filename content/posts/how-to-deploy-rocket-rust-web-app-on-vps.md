@@ -52,6 +52,7 @@ First, update the list of available packages and then upgrade to the latest vers
 apt update && apt upgrade
 ```
 
+Next, install some necessary packages:
 
 ```
 apt install curl git gcc nginx certbot python-certbot-nginx
@@ -134,9 +135,13 @@ server {
 }
 ```
 
+Then, run this command to create a symbolic link:
+
+`ln -s /etc/nginx/sites-available/YOUR_DOMAIN /etc/nginx/sites-enabled/`
+
 Check your syntax with `nginx -t`.
 
-Make sure to delete the default nginx file with `rm /etc/nginx/sites-available/default`.
+Make sure to delete the default nginx file with `rm /etc/nginx/sites-available/default && rm /etc/nginx/sites-available/default`.
 
 Reload nginx with `systemctl reload nginx`. Navigate to your domain on your browser with `http://YOUR_DOMAIN_NAME`. Verify that it's working.
 
